@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, sans-serif;
+}
+
+.projects .responsive-table {
+    overflow-x: auto;
+}
+.projects .container {
+    margin: 100px;
+}
+.projects .head {
+    font-size: 16px;
+    margin-bottom: 500px;
+}
+body > div.projects > div > span > a {
+    text-decoration: none;
+}
+.projects  .head .home {
+    color: gray;
+}
+.responsive-table {
+    margin-top: 60px;
+    position: relative;
+}
+.responsive-table table {
+    min-width: calc(100%);
+    border-spacing: 0;
+    border: 1px solid #F8F8F8;
+}
+.responsive-table table thead td {
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+.responsive-table table thead tr .first-td {
+    width: 300px;
+}
+.responsive-table table tr .last-td {
+    max-width: 40px;
+}
+.responsive-table table tbody td {
+    border-top: 1px solid #F8F8F8; 
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+.responsive-table table tbody tr .product {
+    display: flex;
+    align-items: center;
+}
+.responsive-table table tbody td img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+.responsive-table table tbody tr input {
+    width: 60px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid gray ;
+    border-radius: 3px;
+}
+.responsive-table table tbody tr input:focus{
+    outline: none;
+}
+.responsive-table table tfoot tr td {
+    border-top: 1px solid #F8F8F8; 
+}
+.responsive-table table tfoot tr td button {
+    padding: 15px;
+    width: 170px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid gray ;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.responsive-table table tfoot tr td button:hover {
+    background-color: #DB4443;
+    color: white;
+}
+.responsive-table table tfoot tr td .ubdate {
+position: absolute;
+bottom: 0;
+right: 0;
+}
+.projects .container .coupon form [type="text"] {
+    width: 250px;
+    margin-top: 50px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.projects .container .coupon form [type="text"]:focus {
+    outline: none;
+}
+.projects .container .coupon form [type="submit"] {
+    padding: 15px;
+    width: 190px;
+    margin-left: 10px;
+    color: white;
+    background-color: #DB4444;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.projects .container .coupon form [type="submit"]:hover {
+    background-color: #DB3333;
+}
+.projects .container .info-div  {
+    display: flex;
+    justify-content: space-between;
+}
+.projects .container .info-div .coupon {
+    flex-basis: 50%;
+}
+.projects .container .info-div .info {
+    flex-basis: 40%;
+    margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.projects .container .info-div .info h4 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.projects .container .info-div .info .box,
+.projects .container .info-div .info .last-box {
+    padding: 15px 0;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 50px);
+    margin-left: 20px;
+    font-size: 15px;
+}
+.projects .container .info-div .info .last-box {
+    border-bottom: none;
+}
+.projects .container .info-div .info .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects .container .info-div .info .button button {
+    background-color: #DB4444;
+    padding: 17px 60px;
+    color: white;
+    margin: 5px 0 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.projects .container .info-div .info .button button:hover {
+    background-color: #DB3333;
+}
+@media (max-width: 1200px) {
+    .projects .container .info-div {
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .projects {
+        margin: 100px 40px;
+    }
+    .projects .container {
+        margin: 0;
+    }
+    .responsive-table table {
+        font-size: 13px;
+    }
+    .responsive-table table tbody tr td .product img {
+        width: 30px;
+        height: 30px;
+    }
+    .responsive-table table tbody tr input {
+        width: 40px;
+        height: 20px;
+    }
+    .responsive-table table tfoot tr td button {
+        width: 120px;
+        font-size: 13px;
+        padding: 10px;
+        font-weight: bold;
+    }
+    .responsive-table table tfoot tr td .ubdate {
+        position: relative;
+    }
+    .projects .container .info-div {
+        text-align: center;
+    }
+    .projects .container .info-div .info div span{
+        font-size: 13px;
+    }
+    .projects .container .info-div .coupon form [type="text"]{
+        width: 100%;
+    }
+    .projects .container .info-div .coupon form [type="text"]::placeholder {
+        font-size: 13px;
+    }
+    .projects .container .info-div .coupon form [type="submit"]{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .projects .container .info-div .info h4 {
+        margin-left: 0;
+    }
+}

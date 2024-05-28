@@ -1,0 +1,46 @@
+
+.today-parent .containerr .arrow {
+    top: 0% !important;
+    z-index: 10;
+}
+.today-parent-border-none {
+    border: none;
+}
+.today-parent {
+    margin-top: 50px !important;
+}
+.wrapper .cardss {
+    all:unset;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+@media (max-width:767px) {
+    .wrapper .cardss {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+    }
+}
+.wrapper .cardss .card {
+    width: 100% !important;
+}
+.today-parent .wrapper .del-parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+body > div:nth-child(2) > div > div.del-parent > button {
+    border: 1px solid #777;
+    background: white;
+    border-radius: 5px;
+    padding: 7px 26px;
+    font-weight: 600;
+}
+.trashh {
+    color: grey;
+    font-size: 18px;
+}
+.containerr .cardss .card img {
+    width: 60% !important;
+}
